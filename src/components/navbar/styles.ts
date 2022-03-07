@@ -18,8 +18,8 @@ export const Left = styled.div`
 `;
 export const Center = styled.div`
   h1 {
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: 900;
+    font-size: 30px;
   }
 `;
 export const Right = styled.div`
@@ -27,7 +27,7 @@ export const Right = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 600;
   }
 

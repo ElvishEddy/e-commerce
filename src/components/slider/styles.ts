@@ -23,7 +23,7 @@ export const Arrow = styled.div`
   opacity: 0.5;
   background-color: #fff7f7;
   border-radius: 50%;
-
+  z-index: 2;
   :first-child {
     left: 10px;
   }
@@ -41,8 +41,12 @@ export const Arrow = styled.div`
 export const ImageWrap = styled.div`
   height: 100%;
   flex: 1;
+
   img {
     height: 80%;
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
   }
 `;
 export const Info = styled.div`
@@ -50,7 +54,7 @@ export const Info = styled.div`
   padding: 50px;
 
   h1 {
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bold;
   }
   p {
@@ -74,11 +78,13 @@ export const Info = styled.div`
 export const Wrapper = styled.div`
   height: 100%;
   display: flex;
+  transition: all 1.5s ease;
+  transform: translateX(${(props: any) => props?.index * -100}vw);
 `;
 export const Slide = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #fbf0f4;
+  background-color: #${(props: any) => props.bg};
 `;

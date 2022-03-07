@@ -3,17 +3,14 @@ import { Button } from "antd";
 
 import { Container, Image, Info } from "./styles";
 
-export const CategoryItem = () => {
+export const CategoryItem = (props: any) => {
+  const { id, img, title } = props;
   return (
-    <Container>
-      <Image>
-        <img
-          src="https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-          alt="SHIRT STYLE!"
-        />
-      </Image>
+    <Container key={id}>
+      <Image src={img} alt={title} />
+
       <Info>
-        <p>SHIRT STYLE!</p>
+        <h1>{title}</h1>
         <Button>SHOP NOW</Button>
       </Info>
     </Container>
