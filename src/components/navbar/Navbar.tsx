@@ -31,7 +31,7 @@ export const Navbar = () => {
             {" "}
             <a href="#">
               <Badge count={6} size="small">
-                <ShoppingCartOutlined style={{ fontSize: "17px" }} />
+                <ShoppingCartOutlined style={{ fontSize: "19px" }} />
               </Badge>
             </a>
           </li>
