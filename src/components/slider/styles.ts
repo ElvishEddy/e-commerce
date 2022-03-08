@@ -41,12 +41,12 @@ export const Arrow = styled.div`
 export const ImageWrap = styled.div`
   height: 100%;
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     height: 80%;
-    display: flex;
-    margin: auto;
-    padding-top: 20px;
   }
 `;
 export const Info = styled.div`
