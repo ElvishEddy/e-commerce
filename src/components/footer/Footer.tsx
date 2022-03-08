@@ -107,7 +107,7 @@ export const Footer = () => {
           <span>
             <MailOutlined style={{ fontSize: "18px" }} />
           </span>
-          contact@lama.dev
+          contact@lima.dev
         </p>
         <img src="https://i.ibb.co/Qfvn4z6/payment.png" alt="payment" />
       </Right>
