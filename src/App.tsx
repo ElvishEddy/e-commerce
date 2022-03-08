@@ -1,11 +1,13 @@
 import { useState } from "react";
 
-import Home from "./pages/home";
+import { Home, ProductList, ProductDetail } from "./pages";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      {/* <Home /> */}
+      {/* <ProductList /> */}
+      <ProductDetail />
     </div>
   );
 }
