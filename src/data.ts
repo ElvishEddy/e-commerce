@@ -1,7 +1,9 @@
+import model from "./assets/images/model.png";
+
 export const sliderItems = [
   {
     id: 1,
-    img: "https://cdn.shopify.com/s/files/1/1708/7943/products/3-24-21110875.jpg?v=1617224978",
+    img: model,
     title: "SUMMER SALE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "f5fafd",

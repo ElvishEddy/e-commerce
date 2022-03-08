@@ -20,6 +20,7 @@ export const Center = styled.div`
   h1 {
     font-weight: 900;
     font-size: 30px;
+    margin-right: 100px;
   }
 `;
 export const Right = styled.div`
@@ -39,4 +40,5 @@ export const Right = styled.div`
 export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
+  min-width: 280px;
 `;
