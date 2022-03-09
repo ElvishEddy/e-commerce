@@ -21,6 +21,11 @@ export const Info = styled.div`
     margin-bottom: 15px;
   }
 
+  h2::selection {
+    color: ${({ theme }) => theme.colors.teal};
+    background-color: ${({ theme }) => theme.colors.white};
+  }
+
   p {
     font-weight: 500;
     font-size: 1.1rem;
@@ -84,4 +89,8 @@ export const Button = styled.button`
   border: 1px solid ${({ theme }) => theme.colors.teal};
   padding: 0.5em 0.8em;
   cursor: pointer;
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.teal};
+    color: ${({ theme }) => theme.colors.white};
+  }
 `;
