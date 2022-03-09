@@ -176,7 +176,7 @@ export const Price = styled.span`
 export const Summary = styled.div`
   flex: 1;
   padding: 1.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
   height: 50%;
   border-radius: 10px;
 
@@ -206,4 +206,10 @@ export const PriceText = styled.div`
   h3 {
     font-weight: 300;
   }
+`;
+
+export const Hr = styled.hr`
+  background-color: #eee;
+  border: none;
+  height: 1px;
 `;

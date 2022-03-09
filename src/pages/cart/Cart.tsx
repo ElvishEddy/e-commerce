@@ -24,6 +24,7 @@ import {
   ProductPriceInfo,
   PriceContainer,
   PriceText,
+  Hr,
 } from "./styles";
 
 export const Cart = () => {
@@ -91,7 +92,7 @@ export const Cart = () => {
                 </Right>
               </TextDes>
             </ProductInfo>
-            <hr />
+            <Hr />
 
             <ProductInfo>
               <Image>
