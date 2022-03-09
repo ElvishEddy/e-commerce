@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   padding: 2.2em;
+  border-top: 1px solid #eee;
 `;
 export const Left = styled.div`
   flex: 1;

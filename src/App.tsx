@@ -1,6 +1,13 @@
 import { useState } from "react";
 
-import { Home, ProductList, ProductDetail, Login, Register } from "./pages";
+import {
+  Home,
+  ProductList,
+  ProductDetail,
+  Login,
+  Register,
+  Cart,
+} from "./pages";
 
 function App() {
   return (
@@ -9,7 +16,8 @@ function App() {
       {/* <ProductList /> */}
       {/* <ProductDetail /> */}
       {/* <Register /> */}
-      <Login />
+      {/* <Login /> */}
+      <Cart />
     </div>
   );
 }
