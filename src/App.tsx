@@ -8,7 +8,8 @@ function App() {
       {/* <Home /> */}
       {/* <ProductList /> */}
       {/* <ProductDetail /> */}
-      <Register />
+      {/* <Register /> */}
+      <Login />
     </div>
   );
 }
