@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { mobile } from "../../../styles";
+
 export const Container = styled.div`
   flex: 1;
   margin: 8px;
@@ -15,6 +17,7 @@ export const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  ${mobile({ height: "50vh" })}
 `;
 export const Info = styled.div`
   position: absolute;
