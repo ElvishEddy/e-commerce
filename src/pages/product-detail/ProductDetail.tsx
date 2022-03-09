@@ -50,7 +50,7 @@ export const ProductDetail = () => {
             <Filter>
               <FilterTitle>Size</FilterTitle>
               <select>
-                <option disabled selected>
+                <option disabled defaultValue="Size">
                   Size
                 </option>
                 <option value="xs">XS</option>
