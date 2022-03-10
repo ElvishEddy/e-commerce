@@ -12,9 +12,9 @@ import {
 function App() {
   return (
     <div className="App">
-      {/* <Home /> */}
+      <Home />
       {/* <ProductList /> */}
-      <ProductDetail />
+      {/* <ProductDetail /> */}
       {/* <Register /> */}
       {/* <Login /> */}
       {/* <Cart /> */}

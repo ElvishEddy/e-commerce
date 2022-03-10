@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { flex, mobile } from "../../styles";
+
 export const Container = styled.div`
   height: 100vh;
   background: linear-gradient(rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.4)),
@@ -19,12 +21,14 @@ export const Wrapper = styled.div`
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
+    ${mobile({ fontSize: "1.2rem" })}
   }
+
+  ${mobile({ maxWidth: "85%" })}
 `;
 
 export const Form = styled.form`
-  display: flex;
-  flex-wrap: wrap;
+  ${flex({ flexWrap: "wrap" })}
   gap: 1.5rem;
 `;
 
@@ -75,9 +79,10 @@ export const Button = styled.a`
   }
 `;
 export const LinkContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
+  ${flex({ justifyContent: "space-between" })}
   margin: 1.5rem 0 0;
+
+  ${mobile({ flexDirection: "column", gap: "0.3rem" })}
 `;
 export const Link = styled.a`
   font-size: 0.9rem;

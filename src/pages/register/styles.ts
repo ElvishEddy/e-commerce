@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { flex, mobile } from "../../styles";
+
 export const Container = styled.div`
   height: 100vh;
   background: linear-gradient(rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.4)),
@@ -19,13 +21,19 @@ export const Wrapper = styled.div`
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
+    ${mobile({ fontSize: "1.1rem" })};
   }
+
+  ${mobile({ maxWidth: "85%", padding: "20px" })};
 `;
 
 export const Form = styled.form`
-  display: flex;
-  flex-wrap: wrap;
+  ${flex({ flexWrap: "wrap" })}
   gap: 1rem;
+
+  p {
+    ${mobile({ fontSize: "0.85rem" })}
+  }
 `;
 
 export const Input = styled.input`

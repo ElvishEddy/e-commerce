@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { flex } from "../../../styles";
+
 export const Info = styled.div`
   opacity: 0;
   width: 100%;
@@ -9,21 +11,17 @@ export const Info = styled.div`
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  ${flex({ justifyContent: "center", alignItems: "center" })};
   transition: all 0.5s ease;
   cursor: pointer;
 `;
 
 export const Container = styled.div`
-  display: flex;
+  ${flex({ justifyContent: "center", alignItems: "center" })};
   flex: 1;
   margin: 5px;
   min-width: 280px;
   height: 350px;
-  align-items: center;
-  justify-content: center;
   background-color: #f5fbfd;
   position: relative;
   &:hover ${Info} {
@@ -48,9 +46,7 @@ export const Icon = styled.div`
   height: 40px;
   border-radius: 50%;
   background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  ${flex({ justifyContent: "center", alignItems: "center" })};
   margin: 10px;
   transition: all 0.5s ease;
   &:hover {
