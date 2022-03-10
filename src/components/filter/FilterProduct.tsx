@@ -39,6 +39,7 @@ export const FilterProduct = () => {
             <option value="xxl">XXL</option>
           </select>
         </FilterType>
+
         <FilterType>
           <FilterName>Sort Products:</FilterName>
           <select>

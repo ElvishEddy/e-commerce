@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { mobile } from "../../styles";
+import { mobile, flex } from "../../styles";
 
 export const Container = styled.div`
   display: flex;
@@ -41,9 +41,7 @@ export const Icon = styled.span`
   display: inline-block;
   border-radius: 50%;
   background-color: #${(props) => props.color};
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${flex({ justifyContent: "center", alignItems: "center" })};
   color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
 `;

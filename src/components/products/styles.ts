@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
-import { mobile } from "../../styles";
+import { mobile, flex } from "../../styles";
 
 export const Container = styled.div`
   padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  ${flex({ justifyContent: "space-between", flexWrap: "wrap" })};
   ${mobile({ padding: "10px" })}
 `;

@@ -1,18 +1,15 @@
 import styled from "styled-components";
 
-import { mobile } from "../../styles";
+import { mobile, flex } from "../../styles";
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  ${flex({ justifyContent: "space-between", alignItems: "center" })};
   margin: 12px 20px;
-  ${mobile({ margin: "15px" })}
+  ${mobile({ margin: "10px" })}
 `;
 
 export const Left = styled.div`
-  display: flex;
-  align-items: center;
+  ${flex({ alignItems: "center" })};
 
   p {
     margin-right: 10px;
@@ -22,14 +19,13 @@ export const Left = styled.div`
     ${mobile({ display: "none" })}
   }
 
-  ${mobile({ width: "180px" })}
+  ${mobile({ width: "160px" })}
 `;
 
 export const SearchContainer = styled.div`
-  display: flex;
-  align-items: center;
+  ${flex({ alignItems: "center" })};
   min-width: 280px;
-  ${mobile({ minWidth: "180px" })}
+  ${mobile({ minWidth: "160px" })}
 `;
 
 export const Center = styled.div`
@@ -44,9 +40,7 @@ export const Center = styled.div`
 
 export const Right = styled.div`
   ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    ${flex({ justifyContent: "center", alignItems: "center" })};
     font-size: 1rem;
     font-weight: 600;
   }

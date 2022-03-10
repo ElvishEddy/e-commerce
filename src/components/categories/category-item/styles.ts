@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { mobile } from "../../../styles";
+import { mobile, flex } from "../../../styles";
 
 export const Container = styled.div`
   flex: 1;
@@ -25,10 +25,12 @@ export const Info = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  ${flex({
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
+  })};
 
   h1 {
     color: ${({ theme }) => theme.colors.white};

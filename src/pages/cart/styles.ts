@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { flex, mobile } from "../../styles";
+
 export const Container = styled.div``;
 export const Wrapper = styled.div`
   margin: 2rem;
@@ -8,13 +10,15 @@ export const Wrapper = styled.div`
     text-align: center;
     margin-bottom: 1rem;
     font-weight: 500;
+
+    ${mobile({ fontSize: "1.5rem" })}
   }
+
+  ${mobile({ margin: "20px" })}
 `;
 
 export const Info = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  ${flex({ justifyContent: "space-between", alignItems: "center" })}
 `;
 
 export const TextGroup = styled.div``;
@@ -22,6 +26,7 @@ export const Text = styled.span`
   text-decoration: underline;
   font-weight: 500;
   margin-right: 30px;
+  ${mobile({ display: "none" })}
 `;
 export const Button = styled.a`
   font-size: 0.9rem;
@@ -112,19 +117,23 @@ export const Button = styled.a`
   &:last-child {
     text-align: center;
   }
+
+  ${mobile({ padding: "0.6em 1em", letterSpacing: "0" })}
 `;
 
 export const ProductContainer = styled.div`
   display: flex;
   margin-top: 4rem;
+  ${mobile({ marginTop: "2.5rem", flexDirection: "column" })}
 `;
 export const ProductPriceInfo = styled.div`
   flex: 3;
 `;
 export const ProductInfo = styled.div`
-  display: flex;
-  align-itmes: center;
+  ${flex({ alignItems: "center" })}
   min-height: 50%;
+
+  ${mobile({ margin: "10px 0", gap: "1rem" })}
 `;
 export const Image = styled.div`
   flex: 1;
@@ -136,9 +145,8 @@ export const Image = styled.div`
 `;
 export const TextDes = styled.div`
   flex: 4;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  ${flex({ justifyContent: "space-around", alignItems: "center" })}
+  ${mobile({ flexDirection: "column", flex: "1" })}
 `;
 
 export const TextInfo = styled.p``;
@@ -150,16 +158,17 @@ export const Color = styled.div`
 `;
 
 export const Left = styled.div`
-  display: flex;
-  flex-direction: column;
+  ${flex({ flexDirection: "column" })}
   font-size: 1.2rem;
   gap: 1.5rem;
+  ${mobile({ gap: "0.5rem", fontSize: "1rem" })}
 `;
-export const Right = styled.div``;
+export const Right = styled.div`
+  ${mobile({ textAlign: "center", marginRight: "30px;" })}
+`;
 
 export const AmountContainer = styled.div`
-  display: flex;
-  align-items: center;
+  ${flex({ alignItems: "center" })}
 `;
 export const Amount = styled.span`
   font-size: 1.3rem;
@@ -171,6 +180,7 @@ export const Price = styled.span`
   font-weight: 200;
   margin: 20px 0;
   display: inline-block;
+  ${mobile({ margin: "0", fontSize: "1.5rem" })}
 `;
 
 export const Summary = styled.div`
@@ -183,20 +193,20 @@ export const Summary = styled.div`
   h2 {
     font-size: 2.5rem;
     font-weight: 300;
+    ${mobile({ fontSize: "1.5rem" })}
   }
+  ${mobile({ padding: "15px" })}
 `;
 
 export const PriceContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  ${flex({ flexDirection: "column" })}
   gap: 1.2rem;
   margin-bottom: 1rem;
+  ${mobile({ gap: "0.3rem" })}
 `;
 
 export const PriceText = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  ${flex({ justifyContent: "space-between", alignItems: "center" })}
   font-size: 1.1rem;
   font-weight: 500;
 
@@ -205,7 +215,10 @@ export const PriceText = styled.div`
   }
   h3 {
     font-weight: 300;
+    ${mobile({ fontSize: "1.5rem" })}
   }
+
+  ${mobile({ fontSize: "1rem" })}
 `;
 
 export const Hr = styled.hr`

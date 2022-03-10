@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
-import { mobile } from "../../styles";
+import { mobile, flex } from "../../styles";
 
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.lightPink};
   height: 60vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  ${flex({
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+  })}
 
   h1 {
     font-size: 70px;
@@ -24,6 +26,7 @@ export const Container = styled.div`
     ${mobile({ fontSize: "1.1rem" })}
   }
 `;
+
 export const InputEmail = styled.div`
   display: flex;
   width: 40%;
@@ -36,8 +39,9 @@ export const InputEmail = styled.div`
   ${mobile({ width: "80%", height: "35px" })}
 `;
 export const ButtonIcon = styled.button`
-  display: flex;
-  align-items: center;
+  ${flex({
+    alignItems: "center",
+  })}
   padding: 0.2em 1.5em;
   font-size: 1.2rem;
   border: none;
